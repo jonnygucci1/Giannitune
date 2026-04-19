@@ -1,0 +1,86 @@
+# Build artifacts
+build/
+build-*/
+cmake-build-*/
+out/
+
+# CMake FetchContent cache
+_deps/
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.sdf
+*.opendb
+CMakeSettings.json
+
+# VS Code — keep launch/tasks shared, ignore machine state
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Plugin install targets (local test builds)
+*.vst3/
+*.component/
+
+# Python (research scripts)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# JUCE fetched source tree (re-fetched by CMake FetchContent)
+libs/juce-src/
+libs/signalsmith-stretch-src/
+
+# Legacy / scratch folders
+2/
+
+# Test output
+click_hunt_out/
+regression_out/
+test_out/
+
+# v1.2.1: installer build artifacts + staging + tool downloads
+installer/*/Output/
+installer/*/_staging/
+installer/*/_components/
+tools_bin/
+*.pkg
+*.dmg
+
+# v1.2.1: experimental/scratch output directories from DspTest
+antares-regression/
+*.out
+frog_sweep_*/
+frog_sweep_dry_rs*/
+frog_sweep_versace_*/
+latency_sweep_out/
+matrix_render_out/
+psola_matrix_out/
+regression_v1_out/
+signalsmith_out/
+signalsmith_variants_out/
+transient_stress_out/
+voicetype_scan_out/
+wav-stats/
+detector_ab_out/
+
+# v1.2.1: local dev scratch
+run.bat
+run_psola_ab.bat
+pitch_test/
+help/
+design/
+psola_ab_result.*
+psola_run.log
+diag_*.csv
